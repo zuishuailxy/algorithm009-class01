@@ -3,6 +3,7 @@
 
 深度优先搜索：用栈实现
 实例代码
+```
 visited = set()
 def dfs(node):
     if node in visited:
@@ -11,9 +12,10 @@ def dfs(node):
     for next_node in node.childred():
         if not next_node in visited:
             dfs(next_node, visited)
-
+```
 广度优先搜索:用队列实现
 实例代码
+```
 visited = set()
 def bfs(graph, start, end):
     queue = []
@@ -25,7 +27,7 @@ def bfs(graph, start, end):
         process(node)
         node = generate_related_nodes(node)
         queue.push(nodes)
-
+```
 贪心算法：
 在每一步选择中都采取当前状态下最优的选择，从而希望导致结果是全局最好或是最优的算法。
 + 贪心：它对每个子问题的解决方案都作出选择，不能回退。
@@ -37,6 +39,7 @@ def bfs(graph, start, end):
 二分查找的前提：
 1.目标函数具有单调性 2.存在上下界 3.能够通过索引访问
 代码模板
+```
 left, right = 0, len(array) - 1
 while left <= right:
     mid = (left + right) / 2
@@ -46,3 +49,4 @@ while left <= right:
         left = mid + 1
     else:
         right = mid - 1
+```
