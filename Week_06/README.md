@@ -3,13 +3,13 @@
 
 动态规划：本质是 分治+最优子结构
 
-动态规划的关键点：
-    1.最优子结构 opt[n] = best_of(opt[n-1], opt[n-2],...)  
-    2.储存中间状态 opt[i]  
-    3.递推公式  
-        例如：Fib: opt[i] = opt[i-1] + opt[i-2]  
-         二维路径：opt[i, j] = opt[i+1, j] + opt[i, j+1](切判断a[i, j]是否是空地)  
+动态规划的关键点：  
+&emsp;1.最优子结构 opt[n] = best_of(opt[n-1], opt[n-2],...)  
+&emsp;2.储存中间状态 opt[i]  
+&emsp;3.递推公式   
+&emsp;&emsp;例如：Fib: opt[i] = opt[i-1] + opt[i-2]  
+&emsp;&emsp;二维路径：opt[i, j] = opt[i+1, j] + opt[i, j+1](切判断a[i, j]是否是空地)  
 
-思维总结：
-1.打破自己的思维惯性，形成机器思维  
-2.理解复杂逻辑的关键  
+思维总结：  
+&emsp;1.打破自己的思维惯性，形成机器思维  
+&emsp;2.理解复杂逻辑的关键  
